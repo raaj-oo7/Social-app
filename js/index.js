@@ -56,7 +56,7 @@ const createPost = () => {
   `);
   });
   input.value = "";
-  updateStatus()
+  updateStatus();
 };
 
 const deletePost = (e) => {
@@ -64,7 +64,7 @@ const deletePost = (e) => {
   data.splice(e.id, 1);
   localStorage.setItem("data", JSON.stringify(data));
   console.log(data);
-  updateStatus()
+  updateStatus();
 };
 
 const editPost = (e) => {
@@ -84,7 +84,3 @@ const editPost = (e) => {
 let fruits = ["Apple", "Banana", "Watermelon", "Orange"];
 console.log(fruits.hasOwnProperty(3));
 console.log(fruits.hasOwnProperty(4));
-
-
-
-
